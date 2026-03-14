@@ -2,18 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f4; }
-        h1 { color: #333; }
-        .card { background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        :root {
+            --primary: #2563eb; /* Modern Blue */
+            --dark: #1f2937;
+            --light: #f9fafb;
+        }
+        body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: white; padding: 1rem 10%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: sticky; top: 0; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 700; font-size: 1.2rem; }
+
+        /* Hero Section */
+        header { padding: 80px 10%; text-align: center; background: white; }
+        h1 { font-size: 3rem; margin-bottom: 10px; color: var(--primary); }
+        p.subtitle { font-size: 1.2rem; color: #666; max-width: 600px; margin: 0 auto 30px; }
+
+        /* Projects Section */
+        .container { padding: 50px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 25px; border-radius: 12px; border: 1px solid #e5e7eb; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px; color: #999; font-size: 0.9rem; }
+        
+        /* Button Style */
+        .btn { background: var(--primary); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: 600; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Hello, I'm [Your Name]!</h1>
-        <p>This website is hosted on GitHub Pages.</p>
-        <p>Welcome to my corner of the internet.</p>
+
+    <nav>
+        <a href="#">MyBrand.</a>
+        <div>Built with GitHub Pages</div>
+    </nav>
+
+    <header>
+        <h1>Creative Developer & Designer</h1>
+        <p class="subtitle">I build sleek, functional, and high-performance websites. Welcome to my digital workspace.</p>
+        <a href="mailto:your@email.com" class="btn">Get In Touch</a>
+    </header>
+
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Project One</h3>
+                <p>A brief description of a cool thing you built. Maybe it's a game, a tool, or a blog.</p>
+            </div>
+            <div class="card">
+                <h3>Project Two</h3>
+                <p>Using GitHub to host static sites is a great way to showcase your coding progress.</p>
+            </div>
+            <div class="card">
+                <h3>Project Three</h3>
+                <p>Everything here is customizable. You can change colors, fonts, and layouts easily.</p>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        &copy; 2026 Crafted with ❤️ using GitHub
+    </footer>
+
 </body>
 </html>
