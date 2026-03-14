@@ -69,3 +69,54 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportCenter | Live Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker__item">Lakers 112 - 105 Warriors (Final)</div>
+            <div class="ticker__item">Man City 2 - 1 Liverpool (75')</div>
+            <div class="ticker__item">Djokovic leads 2-1 in sets...</div>
+            <div class="ticker__item">Breaking: Mbappe signs new contract!</div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">SPORT<span>HUB</span></div>
+        <ul>
+            <li><a href="#">Live Scores</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Schedules</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h1>Real-Time Monitoring</h1>
+            <p id="current-date"></p>
+        </header>
+
+        <div class="score-grid" id="score-container">
+            <div class="score-card">
+                <div class="league">Premier League</div>
+                <div class="match">
+                    <div class="team">ARS <span class="score">3</span></div>
+                    <div class="vs">vs</div>
+                    <div class="team">CHE <span class="score">1</span></div>
+                </div>
+                <div class="status live">LIVE - 82'</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
